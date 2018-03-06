@@ -1,0 +1,6 @@
+- [Home](/)
+- Setup
+  - [Installation](installation.md)
+  - [Getting Started](started.md)
+  - [Advanced](advanced.md)
+  - [Cool Effects](effects.md)
