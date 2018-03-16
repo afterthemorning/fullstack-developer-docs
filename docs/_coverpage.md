@@ -1,4 +1,4 @@
-![logo](/static/img/logo.png)
+![logo](static/img/logo.png)
 
 # Full Stack Developer Docs <small>1.0.0</small>
 
