@@ -7,24 +7,72 @@
   <meta name="description" content="Full Stack Developer Docs">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/vuep/dist/vuep.css">
+
+
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
       name: 'Full Stack Developer Docs',
       repo: 'https://github.com/afterthemorning/fullstack-developer-docs',
-	  coverpage: true,
-	  loadNavbar: true,
-	  loadSidebar: true,
-	  loadSidebar: 'navbar.md',
-	  subMaxLevel: 2,
-	  executeScript: true,
-	  auto2top: true,
-	  themeColor: '#3F51B5'
+      loadNavbar: true,
+      loadSidebar: true,
+      loadSidebar: 'navbar.md',
+      maxLevel: 6,
+      subMaxLevel: 6,
+      executeScript: true,
+      mergeNavbar: true,
+      auto2top: true,
+      themeColor: '#3F51B5',
+      coverpage: true,
+      onlyCover: false,
+      coverpage: ['/','/en/'],
+
+      // Comments
+      disqus: 'full-stack-developers-docs',
+      // Search
+      search: {
+          paths: 'auto', // or 'auto'
+          // Localization
+          placeholder: {
+            '/cn/': '搜索',
+            '/en/': 'Type to search',
+            '/': 'Type to search'
+          },
+          noData: {
+            '/de-de/': 'Keine Ergebnisse!',
+            '/zh-cn/': '没有结果!',
+            '/': 'No results!'
+          },
+          // Localization
+          noData: {
+            '/cn/': '找不到结果',
+            '/en/': 'Type to search',
+            '/': 'No Results'
+          },
+          // Headline depth, 1 - 6
+          depth: 6
+      },
+
+      formatUpdated: '{MM}/{DD} {HH}:{mm}'
     }
   </script>
-  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
 </body>
+<script src="//unpkg.com/vue/dist/vue.min.js"></script>
+<script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
+
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/front-matter.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/disqus.min.js"></script>
+
+<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
+
 </html>
