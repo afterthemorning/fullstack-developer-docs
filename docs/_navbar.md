@@ -5,7 +5,7 @@
   * [Quick start](homepage.md)
 
 * About Me
-  * [Blog](blog.raultang.com)
+  * [Blog](http://blog.raultang.com)
 
 * Language
   * [English](/en/)
